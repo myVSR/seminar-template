@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proseminar Web Engineering im Sommersemester 2014 - Store in the Cloud or not in the Cloud</title>
+  <link rel="stylesheet" type="text/css" href="main.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <header>
+        <h2>Proseminar Web Engineering im Sommersemester 2014</h2>
+		<h1>Store in the Cloud or not in the Cloud</h1>
+        <h2 class="author">Anne Seitz</h2>
+		<h3 class="affiliation">
+			Professur Verteilte und Selbstorganisierende Rechnersysteme<br/>
+			Technische Universität Chemnitz<br/>
+			Chemnitz, Deutschland
+		</h3>
+    </header>
+    <section>
+    	<h2>1. Einleitung</h2>
+        <p> 
+    		In den letzten Jahren hat die Beliebtheit und damit auch das Angebot von Cloud-Diensten stark zugenommen. Die Gründe dafür sind vielseitig, so wirken die
+        steigende Tendenz zur Nutzung mehrerer mobiler Endgeräte, ebenso wie die Mobilität des Arbeitsortes sich positiv auf diesen Trend aus. Zusätzlich
+        vergrößert sich im digitalen Zeitalter der für Medien beanspruchte Speicherplatz rapide.
+    	</p>
+    	<p>
+    		Doch gerade in den letzten Jahren steigt zeitgleich auch das Bewusstsein für Datenschutz und Privatsphäre im Netz. Dies stellt die Anbieter von Cloud Diensten
+        zum einen vor die Herausforderung eine ansprechende Menge an Speicherplatz günstig bereitzustellen und gleichzeitig die Daten der Kunden ausreichend vor unbefugtem
+        Zugriff zu schützen. Dazu zählen natürlich Maßnahmen für die sichere Übertragung von Daten, sowie die Verschlüsselung bei Ablage auf den Servern. Aber auch
+        die Authentifizierung des Nutzers spielt eine wichtige Rolle, vor allem weil hier der Anwender selbst aktiv werden kann.
+    	</p>
+    	<p>
+    		Zwei solcher Anbieter sind Dropbox und GoogleDrive. Im Folgenden werden diese beiden hinsichtlich ihres Angebots und Sicherheitsaspekten analysiert. Als
+        zusätzliche Verschlüsselungssoftware wird Boxcryptor und als alternative Lösung BittorrentSync vorgestellt. Zum Schluss wird auf die Option sich eine eigene Cloud mittels ownCloud zu bauen eingegangen, sowie 
+    	das Ergebnis dessen präsentiert.
+    	</p>
+	</section>
+    <section>
+    	<h2> 2. Gegenüberstellung verschiedener Anbieter</h2>
+    	<h3> 2.1. Allgemeiner Überblick </h3>
+    		
+    	<p>
+        Die Attraktivität, Daten in der Cloud zu speichern, ergibt sich in der Regel aus mindestens einer der folgenden Funktionsmöglichkeiten. Grundlegende Idee ist
+        die Möglichkeit eine Kopie einer lokal gespeicherten Datei zu erstellen und durch Speichern in der Cloud diese Datei von überall abrufen zu können. Wenn
+        dieser Zugriff nun von mehreren Geräten aus geschieht, ergibt sich daraus die Notwendigkeit der Synchronisation von solchen Daten, sodass diese immer auf dem
+        aktuellsten Stand sind. Des Weiteren ist das Teilen von Daten und die variable Rechtevergabe eine wichtige Cloud-Funktion. Auch hier wird wieder die Synchronisation
+        zu einem wichtigen Thema, vor allem wenn es um Team- oder Projektarbeiten geht. Zu guter Letzt wird gerne auf die Option des Backups zurückgegriffen. Hier werden
+        über einen längeren Zeitraum immer wieder Kopien von Dateien erstellt, welche dann die verschiedenen Versionen innerhalb eines Entwicklungsprozesses
+        darstellen und die Möglichkeit zur Wiederherstellung älterer Versionen bieten <a href="#r3">[3]</a>.
+    	</p>
+    	<p>
+        Einer der bekanntesten Anbieter und mit über 300 Millionen registrierten Nutzern <a href="#r7">[7]</a> 
+    	ist Dropbox. Als dieser Dienst 2008 online ging, stand zuerst die einfache Verwaltung von Daten unabhängig vom persönlichen Standort im Vordergrund <a href="#r7">[7]</a>. Mittlerweile wurden weitere
+        Funktionen hinzugefügt. Als kostenloser Speicher stehen 2GB zur Verfügung, mit der zusätzlichen Option zur Erweiterung auf bis zu 16GB. Außerdem beinhaltet das
+        Leistungsspektrum die Möglichkeit Dateien und Ordner zu teilen, Offline zu bearbeiten und ältere Versionen wiederherzustellen. Es gibt mehrere
+        Wege, diese Optionen zu nutzen. Angefangen über ein leicht bedienbares Webinterface im Browser gibt es außerdem Clients für Windows, MacOS und
+        Linux. Für Smartphone und Tablet stehen außerdem Apps für die Betriebssysteme Blackberry, iOs und Android zur Verfügung <a href="#r7">[7]</a>.
+    	</p>
+    	<p>
+        Als einer der Marktführer bei Internetdienstleistungen bietet Google.Inc ebenfalls einen Cloud Service an. Dieser entwickelte sich aus der Anwendung
+        GoogleDocs und ging 2012 online. Laut eigenen Angaben benutzen über 190 Millionen Anwender diesen bereitgestellten und in die Vielzahl von eigenen
+        Anwendungen integrierten Service <a href="#r8">[8]</a>. Der kostenfreie Speicherplatz ist
+        um einiges größer als der von Dropbox, nämlich 15GB. Neben den bereits erläuterten Standardfunktionen wie Synchronisation und Offline Bearbeitung gibt es
+        zusätzlich beim Teilen die Möglichkeit die Rechte der Dritten zu definieren. Außerdem wird durch die Integration der anderen Google Dienste, wie
+        beispielsweise Gmail, Google+ oder Picasa Webalben, das Speichern bestimmter Daten in der Cloud vereinfacht. So kann zum Beispiel ein Dokument im Anhang
+        einer Email direkt in GoogleDrive abgelegt werden <a href="#r8">[8]</a>. Die Nutzung des Dienstes ist auch hier sowohl über den Browser, als auch über Clients für alle PC 
+    	Betriebssysteme oder Apps für mobile Geräte möglich. 
+    	</p>	
+        <figure>
+        <pre>
+function createAndSendDocument() {
+  // Create a new Google Doc named 'Hello, world!'
+  var doc = DocumentApp.create('Hello, world!');
+
+  // Access the body of the document, then add a paragraph.
+  doc.getBody().appendParagraph('This document was created ');
+
+  // Get the URL of the document.
+  var url = doc.getUrl();
+
+  // Get the email address of the active user - that's you.
+  var email = Session.getActiveUser().getEmail();
+
+  // Get the name of the document to use as an email subject line.
+  var subject = doc.getName();
+
+  // Append a new string to the "url" variable to use as an email.
+  var body = 'Link to your doc: ' + url;
+
+  // Send yourself an email with a link to the document.
+  GmailApp.sendEmail(email, subject, body);
+}
+        </pre>
+        <figcaption>
+            <strong>Listing 1</strong>: Beispiel Google Script: Spreadsheet erstellen und Link per Mail senden <a href="#r7">[7]</a>
+        
+        </figcaption>
+        </figure>
+    </section>
+    <section>
+    	<h3>2.2. Datenschutz und -sicherheit</h3>
+    	<p>
+        Bei solchen hohen Nutzerzahlen haben beide Anbieter eine große Verantwortung bezüglich der Sicherheit der Daten. Dazu zählen natürlich angemessene
+        Datenschutzrichtlinien und Verschlüsselungstechniken, aber auch die Ermutigung und Aufklärung des Anwenders den eigenen Account so einbruchssicher wie
+        möglich zu gestalten. Dies beginnt schon bei der Registrierung, nämlich mit der Festlegung eines starken Passworts.
+    	</p>
+    	<p>
+        Beide Dienste weisen bei der Registrierung auf die Stärke des Passworts mit Hilfe eines Farbbalkens hin. Die Einstufung erhöht sich je länger die Eingabe
+        wird und je mehr zwischen Groß- und Kleinschreibung, Zahlen und Sonderzeichen variiert wird <a href="#r3">[3]</a>. Zusätzlich wird von beiden die zweistufige Verifizierung stark
+        empfohlen, bei der nicht nur Username und Passwort, sondern ein zusätzlicher Pin ans Handy gesendet wird, um sicherzustellen, dass es sich wirklich um
+        den bestimmten Nutzer handelt. Aber auch hier unterscheiden sich Google und Dropbox in den Details der Umsetzung. Während Dropbox diesen Code entweder per SMS verschickt
+        oder über eine App generieren lässt <a href="#r7">[7]</a>, bietet Google zusätzlich die Übermittlung per Sprachanruf und die Variante der Backup-Codes an <a href="#r8">[8]</a>. Letztere sind vor
+        allem nützlich, wenn das Smartphone bzw. der Empfang gerade nicht zur Hand ist.
+    	</p>
+    	<p>
+        Der nächste wichtige Sicherheitsaspekt ist die Übertragung der Daten. Diese findet bei beiden selbstverständlich über SSL/TSL und HTTPS statt. Danach
+        findet die serverseitige Verschlüsselung über AES-256 bei Dropbox <a href="#r7">[7]</a> und AES-128 bei Google <a href="#r8">[8]</a> statt. Beide verschlüsseln die Daten
+        jedoch mit eigenen generierten Schlüsseln, was zu der Kritik führt, dass „[s]ince Dropbox itself encrypts the data on the server-side, users cannot be sure
+        by cryptographic means that all stored data is highly confidential“ <a href="#r3">[3]</a>. Über Google ist die Kritik sogar noch lauter, denn hier wird
+        erst seit gut einem Jahr serverseitig verschlüsselt <a href="#r1">[1]</a>. Zuvor wiesen Mitarbeiter des GoogleDrive Team
+        nur auf die sichere Kommunikation zwischen Server und Client hin bzw. machten auf den Gebrauch der zwei-Schritt-Verifizierung aufmerksam <a href="#r1">[1]</a>. 
+    	Dass die Schlüssel jedoch selbst generiert und verwaltet werden, sorgt auch hier für Unwohlsein <a href="#r1">[1]</a>.
+    	</p>
+    	<p>
+        Aus diesem Problem hat sich ein ganz eigener Markt entwickelt. Dropbox selbst weist in ihrem Helpcenter auf „zahlreiche Drittanbieter“ <a href="#r7">[7]</a>
+        hin, mit Hilfe welcher Anwender ihre Daten selber verschlüsseln können, bevor sie diese in die Cloud hochladen. Auch Borgmann et al. kommen zu dem Schluss,
+        dass es „a whole range of alternative methods“<a href="#r3">[3]</a> gibt, um die eigenen Daten schon lokal zu verschlüsseln und selber die Schlüssel zu verwalten. Einer
+        dieser Anbieter ist Boxcryptor, 2011 gegründet und mit mittlerweile über 1 Millionen Downloads oft genutzt <a href="#r4">[4]</a>.
+    	</p>
+    	<p>
+        Boxcryptor ist eine Anwendung die speziell zur Verschlüsselung von Daten, welche anschließend in der Cloud gespeichert werden sollen, entwickelt wurde. Das
+        Prinzip ist recht simpel. Die zu verschlüsselnden Daten werden in einem entsprechenden Ordner auf einem virtuellen Laufwerk abgelegt und dort mit Hilfe der
+        AES-256 und RSA Algorithmen verschlüsselt. Danach erst werden die Dateien in den Cloud Ordner weitergegeben. Verschlüsselte Daten sind farblich markiert
+        und leicht von anderen, nicht verschlüsselten Daten, zu unterscheiden. Diese Software ist kompatibel mit allen großen Cloud Dienst Anbietern und allen Betriebssystemen. Auch für Android, iOS und
+        Blackberry gibt es Apps, sodass hier ebenfalls keine Einschränkung besteht <a href="#r4">[4]</a>.
+    	</p>
+    </section>
+    <section>
+    	<h2>3. Alternativen</h2>
+    	<h3>3.1. BitTorrent Sync</h3>
+    	<p>
+        Neben zusätzlichen Verschlüsselungssoftwares, die mit Cloud Diensten zusammen angewendet werden können, haben sich aber auch Dienste entwickelt, die auf
+        Serverspeicherung gänzlich verzichten, und dennoch die gleichen Vorteile versprechen. Zwar noch in der Beta Phase, aber trotzdem ein vielversprechendes Konzept,
+        präsentiert beispielsweise BitTorrent Sync. Hier werden Daten direkt zwischen Geräten synchronisiert. Dazu müssen diese in dem entsprechenden Sync Ordner
+        abgelegt werden, woraufhin ein 20 Byte langer Geheimschlüssel generiert wird. Über diesen Schlüssel können anschließend andere Geräte auf
+    	diese Daten zugreifen. Dies ermöglicht ebenfalls das Teilen von Daten mit Dritten. Mit Hilfe drei verschiedener Einstufungen der Geheimschlüssel, auch    <em>Secrets </em> genannt, 
+    	ist es möglich, Berechtigungen zuzuschreiben und sogar ein zeitliches Limit des Teilens zu setzen <a href="#r2">[2]</a>.
+    	</p>
+    	<p>
+        Ein entscheidender Vorteil ist, dass durch dieses Prinzip keine Einschränkung des zu verfügbaren Speicherplatzes seitens des Anbieters stattfindet. Dieser
+        richtet sich nach der eigenen Kapazität. Außerdem entstehen keine Fragen bezüglich des Standortes der Server und damit folgenden unterschiedlichen
+        Datenschutzrichtlinien, da die Daten nur auf den eigenen Geräten gespeichert werden. Gerade in Hinblick auf die Abhörskandale der NSA und auch des BND
+        stößt dies auf große Begeisterung:
+    	</p>
+    	<p>
+        „That difference in design means that people using Bittorrent Sync don’t have to worry about whether the cloud company hosting their data is properly
+        securing it against rogue employees or other threats. Forgoing the cloud also means that data shared using Bittorrent Sync could be harvested by the NSA or
+        another agency only by going directly to the person or company controlling the synced devices”<a href="#r11">[11]</a>.
+    	</p>
+    	<p>
+        Die Kommunikation zwischen zwei Geräten ist über den AES-128 Algorithmus verschlüsselt. Zudem wird das P2P Protocol verwendet. Trotz Beta Phase 
+    	erstreckt sich das Angebot der Desktop Version bereits über Windows, Mac und Linux, und auch die Unterstützung mobiler Geräte deckt Android, iOS, Windows
+        Phone und den Kindle Fire ab <a href="#r2">[2]</a>.
+    	</p>
+    	<p>
+        Ein für diese Technik spezifischer Nachteil ist allerdings die Voraussetzung, dass zur Synchronisation die entsprechenden Geräte angeschaltet sein müssen<a href="#r11">[11]</a>.
+    	Sollte die Verbindung zu einem Zeitpunkt der Übertragung abbrechen, wird diese jedoch an der entsprechenden Stelle wieder fortgesetzt, sobald
+        beide Geräte wieder online sind<a href="#r6">[6]</a>.
+    	</p>
+	</section>
+    <section>
+    	<h3>3.2 ownCloud</h3>
+        <p>
+        Wer dennoch lieber eine Cloud zur Hand haben und trotzdem auf einen kommerziellen Anbieter verzichten möchte, hat die Möglichkeit mit ownCloud sich selber
+        eine Cloud aufzusetzen. Zuerst vorgestellt in 2011, erfreut sich diese Software heute recht großer Beliebtheit. Nach eigenen Angaben nutzen mehr als 1,3 Millionen
+        Anwender diesen Service <a href="#r10">[10]</a>. Und tatsächlich finden sich zahlreiche Anleitungen im Internet, wie man sich zu Hause mit Hilfe eines Raspberry Pis
+        und ownCloud selber eine Cloud basteln kann <a href="#r12">[12]</a> <a href="#r9">[9]</a> <a href="#r5">[5]</a>.
+    	</p>
+    	<p>
+        Die Vorteile sind schnell zusammengefasst: Erstens orientiert sich die Speicherkapazität, ebenso wie bei BitTorrent Sync, an den eigenen Gegebenheiten. Der
+        Vorteil gegenüber dem Konzept von BitTorrent Sync ist allerdings, dass durch die Zwischenspeicherung der Daten, kein anderes Gerät als das auf dem die
+        Daten gewollt sind online sein muss. Vor allem aber ist der Ort der gespeicherten Daten selbst bestimmt.
+    	</p>
+    	<p>
+        Jedoch ganz ohne Schattenseite ist auch diese Alternative nicht. Gewisse Kenntnisse über Server, Netzwerke und Sicherheitsprotokolle sollten vorhanden sein
+        <a href="#r5">[5]</a>. Zudem ist die Hochverfügbarkeit, wie sie bei Dropbox oder Google herrscht, nicht gewährt.
+    	</p>
+	</section>
+    <section>
+    	<h2>4. Demo ownCloud</h2>
+    	<h3>4.1. Das Set-Up</h3>
+    	<p>
+        Die häufigste Empfehlung und einfachste Lösung für Privatpersonen ist die Nutzung eines Raspberry Pis auf dem Raspbian installiert ist <a href="#r12">[12]</a>. Bevor
+        die eigentliche ownCloud installiert werden kann, bedarf es noch einiger Konfigurationen, wie zum Beispiel die Installation eines Apache Servers, PHP und
+        SQL Datenbank <a href="#r9">[9]</a>. Für das Erreichen der Cloud innerhalb des Heimnetzwerks reicht dies schon, wenn man allerdings auch von außerhalb an die Cloud gelangen
+        möchte, empfiehlt sich die Registrierung bei einem Dynamic DNS Dienst und die Installation dessen Clients zum regelmäßigen aktualisieren der IP Adresse.
+    </p>
+    <p>
+        Anschließend kann die neuste Version von ownCloud heruntergeladen und installiert werden. Während des Installationsprozesses hat man die Möglichkeit
+        entweder die IP des Raspberrys oder eine registrierte URL einzugeben, über welche die ownCloud dann erreichbar ist. Dazu sollten dann auch die Ports 80 und
+        443 im Router zur Weiterleitung freigegeben sein<a href="#r9">[9]</a>.
+    </p>
+    <p>
+        Der nächste Schritt ist bezüglich Sicherheit. Um eine sichere Verbindung über HTTPS zu haben, kann ein selbstsigniertes Zertifikat erzeugt werden. Zwar
+        erscheint dann beim Aufruf der Seite die Warnung, dass es sich um keine vertrauenswürdige Verbindung handelt, jedoch ist der Grund dafür ja die selbst
+        ausgestellte Signatur. Durch Hinzufügen einer Ausnahme für dieses Zertifikat und abspeichern im Browser ist dennoch eine gewisse Kontrolle über die
+        Verbindung gewährt. Sollte in Zukunft beim Aufrufen der Seite diese Warnung wieder erscheinen, obwohl das eigene Zertifikat gespeichert wurde, weiß man
+        beispielsweise, dass jemand Fremdes an dem Zertifikat Änderungen vorgenommen hat <a href="#r5">[5]</a>.
+    </p>
+    <p>
+        Als letztes muss nun nur noch der Dynamic DNS Update Client installiert und konfiguriert werden. Nach einem Neustart des Servers und einloggen auf der
+        eigenen ownCLoud über das Webinterface ist diese bereit zum Nutzen. Es können weitere Apps eingebunden, eine Synchronisation mit Adressbuch oder Kalender
+        eingerichtet und das Aussehen angepasst werden <a href="#r10">[10]</a>.
+    </p>
+    </section>
+    <section>
+        <h3>4.2. Funktionsbeispiele</h3>
+
+    <p>
+        Ein sehr positiver Aspekt ist, dass man die eigene Cloud auch anderen zugänglich machen kann. Der Admin kann Benutzer anlegen und diese Gruppen sowie
+        Rechte zuweisen (siehe Abb.1). Diese können ihre eigenen Daten hochladen, verwalten, teilen und miteinander interagieren.
+    </p>
+    	<figure>
+          <img src="benutzer.png" alt="Liste aller Benutzer"/>
+          <figcaption>
+            <strong>Abbildung 1</strong>: Liste der eingetragenen Benutzer <a href="#r13">[13]</a>.
+          </figcaption>
+        </figure>
+    <p>
+        Beim Teilen gibt es verschiedene Möglichkeiten dieses zu gestalten. Zum einen können Dateien mit ganzen Gruppen oder einzelnen Personen geteilt werden.
+        Des Weiteren lassen sich Optionen wie „kann bearbeiten“, „aktualisieren“, „löschen“ und „teilen“ auswählen. Auch das Setzen eines Ablaufdatums ist möglich,
+        sowie eine zusätzliche Mitteilung per Email mit der Information, dass etwas mit einem geteilt wurde. Aber auch das Teilen mit Dritten, die nicht zu den
+        eingetragenen Benutzern gehören, ist möglich. Hierfür orientiert sich ownCloud an Dropbox oder auch Google, indem es den Link zum kopieren und weiterleiten gibt
+        (siehe Abb 2).
+    </p>
+    <figure>
+          <img src="shareoptions.png" alt="Teilen"/>
+          <figcaption>
+            <strong>Abbildung 2</strong>: Optionen beim Teilen von Daten <a href="#r13">[13]</a>.
+          </figcaption>
+        </figure>
+    <p>
+        Gerade in Hinblick auf das Zusammenarbeiten und Teilen von Daten ist die Übersicht der neusten Aktivitäten sehr nützlich. Hier werden alle Aktivitäten, die
+        einen selbst betreffen mit zusätzlichen Details angezeigt (siehe Abb.3).
+    </p>
+    	<figure>
+          <img src="activity_c.png" alt="Aktivitätsübersicht"/>
+          <figcaption>
+            <strong>Abbildung 3</strong>: Übersicht der Aktivität <a href="#r13">[13]</a>.
+          </figcaption>
+        </figure>
+    </section>
+    <section>
+        <h2>5. Fazit</h2>
+
+    <p>
+        Die Vorteile der Nutzung von Cloud Diensten liegt klar auf der Hand: Die Daten sind unabhängig von Standort und Gerät immer abrufbar. Im Falle eines
+        Schadens an der Festplatte oder ähnlichem sind zudem diese Daten nicht verloren. Auch vereinfacht es Projektarbeiten. Doch es gibt immer zwei Seiten
+        einer Medaille und so sollte sich jeder bewusst sein, dass wenn man seine Daten, seien es persönliche, geschäftliche, belanglose oder sensible Daten, online hochlädt und 
+    	auf fremden Servern speichert, die theoretische Möglichkeit besteht, dass jemand Fremdes sich leichter und unter Umständen unbemerkt Zugriff zu diesen Daten beschaffen kann.
+    </p>
+    <p>
+        Große Anbieter wie Dropbox und Google versprechen viel Leistung, gerade auch in Hinblick auf Sicherheit, aber so zeigte sich besonders im letzten Jahr wie
+        viel hinter den Kulissen geschieht, ausgehend von der Politik und den Geheimdiensten, von dem Anwender nichts mitbekommen. Die besten
+        Verschlüsselungsalgorithmen bei der Übertragung von Daten oder beim Ablegen der selbigen auf den Servern nützen nichts, wenn die Schlüssel von den Firmen
+        selbst verwaltet werden und sie auf Verlangen der Regierung diese herausgeben müssen.
+    </p>
+    <p>
+        Eine Alternative ist sicher die zusätzliche lokale Verschlüsselung, so wie sie Boxcryptor anbietet. Oder auch gänzlich auf das Zwischenspeichern auf
+        Servern zu verzichten und Daten direkt zu Synchronisieren, so wie BitTorrent Sync es vorschlägt. Die Idee sich seine eigene Cloud aufzusetzen erscheint im
+        ersten Moment auch eine interessante Alternative zu sein. Jedoch kann dieser Enthusiasmus schnell verfliegen, denn die Herausforderung diese so sicher wie
+        möglich zu gestalten und den gleichen Service zu bieten wie die Vorbilder, ist doch größer als anfänglich gedacht. Viel Freiheit in Gestaltung und
+        Umsetzung bedeutet in diesem Fall auch sehr viel Verantwortung, welche nur mit Grundkenntnissen kaum erfüllbar ist.
+    </p>
+	</section>
+	<section class="references">
+	   		<h2>6. Literaturverzeichnis</h2>
+    		<p class="reference" id="r1">[1] Barth, Dave (2013, August 13). Google Cloud Storage now provides server-side encryption [Online]. Available: <a href="http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html">http://googlecloudplatform.blogspot.de/2013/08/google-cloud-storage-now-provides.html</a> (28.06.2014)</p>
+    		<p class="reference" id="r2">[2] BitTorrent Sync [Online]. Available: <a href="http://www.bittorentsync.com">http://www.bittorentsync.com</a> (29.06.2014)</p>
+    		<p class="reference" id="r3">[3] Borgmann, Moritz et al. "On the Security of Cloud Storage". Fraunhofer Gesellschaft SIT. Darmstadt. SIT Technical Reports. SIT-TR-2012-001.  March 2012</p>
+    		<p class="reference" id="r4">[4] Boxcryptor [Online]. Available: <a href="http://www.boxcrypotr.com">http://www.boxcryptor.com</a> (29.06.2014)</p>
+    		<p class="reference" id="r5">[5] Connect.de. So Installieren Sie ownCloud auf einem Raspberry Pi [Online]. Available <a href="http://www.connect.de/ratgeber/so-installieren-sie-owncloud-auf-einem-raspberry-pi-1540246.html">http://www.connect.de/ratgeber/so-installieren-sie-owncloud-auf-einem-raspberry-pi-1540246.html</a> (29.06.2014)</p>
+    		<p class="reference" id="r6">[6] Donauer, Jürgen  (2013, December 18). Die Cloud Alternative für Linux: Bittorrent Sync [Online]. Available: <a href="http://www.pcwelt.de/ratgeber/Die_Cloud_Alternative_fuer_Linux__Bittorrent_Sync-Datenaustausch_uebers_Internet-8345539.html">http://www.pcwelt.de/ratgeber/Die_Cloud_Alternative_fuer_Linux__Bittorrent_Sync-Datenaustausch_uebers_Internet-8345539.html</a> (29.06.2014)</p>
+    		<p class="reference" id="r7">[7] Dropbox [Online]. Available: <a href="http://www.driobox.com">http://www.dropbox.com</a> (29.06.2014)</p>
+    		<p class="reference" id="r8"> [8] Google Drive [Online]. Available: <a href="http://www.drive.google.com">http://drive.google.com</a> (29.06.2014)</p>
+    		<p class="reference" id="r9"> [9] H., Muhamed (2014, January). Raspberry Pi - ownCloud installieren Anleitung [Online]. Available: <a href="http://linuxwelt.blogspot.de/2014/01/raspberry-pi-owncloud-installieren.html">http://linuxwelt.blogspot.de/2014/01/raspberry-pi-owncloud-installieren.html</a> (02.07.2014)</p>
+    		<p class="reference" id="r10"> [10] ownCloud [Online]. Available: <a href="http://www.owncloud.org">http://www.owncloud.org</a> (01.07.2014)</p> 
+    		<p class="reference" id="r11">[11] Simonite, Tom (2014, January 17). Sync Your Files without Trusting the Cloud [Online]. Available <a href="http://www.technologyreview.com/news/522516/sync-your-files-without-trusting-the-cloud/">http://www.technologyreview.com/news/522516/sync-your-files-without-trusting-the-cloud/</a> (29.06.2014)</p>
+    		<p class="reference" id="r12">[12] Thoma, Jörg (2014, April 15). OwnCloud - Dropbox Alternative fürs Heimnetzwerk [Online]. Available <a href="http://www.golem.de/news/owncloud-dropbox-alternative-fuers-heimnetzwerk-1404-105843.html">http://www.golem.de/news/owncloud-dropbox-alternative-fuers-heimnetzwerk-1404-105843.html</a> (29.06.2014)</p>
+    		<p class="reference" id="r13"> [13] eigene aufgesetzte ownCloud </p> 
+	</section>
+</body>
+</html>

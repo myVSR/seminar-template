@@ -1,0 +1,75 @@
+body {
+  width: 45em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  background-color: #FBFBFB;
+  color: #333;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 14pt;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family:source-sans-pro, sans-serif;
+}
+
+img, pre{
+  /*max-width: 50em;/*/
+  max-width: 100%;
+  box-shadow: 0px 0px 10px #888888;
+  margin-bottom: 1.5em;
+}
+figcaption{
+  text-align: center;
+}
+
+figure{
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
+
+section.references {
+  text-align: left;
+}
+
+header{
+  text-align: center;
+}
+
+header > h3{
+  font-style: italic;
+  font-weight: normal;
+}
+
+a, a:hover, a:focus, a:visited {
+  color:inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+pre {
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    background-color: white;
+    padding: 0.5em;
+}
+
+@media print{
+  body{
+    color:black;
+    background-color: white;
+    font-size: 12pt;
+    width: 40em;
+    orphans: 3;
+    widows: 3;
+  }
+  img, pre {
+    box-shadow: none;
+  }
+  @page{
+    margin: 3cm;
+  }
+}
