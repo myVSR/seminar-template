@@ -31,6 +31,12 @@ figure{
   margin-bottom: 2.5em;
 }
 
+figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 section.references {
   text-align: left;
 }
